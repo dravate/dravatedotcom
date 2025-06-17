@@ -1,5 +1,6 @@
 <template>
-  <p class="my-2">{{ block.text }}</p>
+  
+   <p class="my-2" v-html="block.text"></p>
 </template>
 
 <script setup lang="ts">
