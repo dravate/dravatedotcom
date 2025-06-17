@@ -1,6 +1,6 @@
 # Dravate — Built on Karmantika
 
-Dravate.com is a real-world example of a business portal powered by Karmantika, a platform built to empower small businesses and creators to launch powerful websites effortlessly.
+[Dravate.com](https://dravate.com) is a real-world example of a business portal powered by [Karmantika](https://karmantika.com), a platform built to empower small businesses and creators to launch powerful websites effortlessly.
 
 
 ## Features 
@@ -14,12 +14,12 @@ Dravate.com is a real-world example of a business portal powered by Karmantika, 
 
 ## Contribute or Collaborate
 We welcome:
-* Feature suggestions to improve Karmantika for all businesses
+* Feature suggestions to improve [Karmantika](https://karmantika.com) for all businesses
 * Pull requests for bug fixes or enhancements
 * Discussions about better UX or tools for small businesses
 
 
-Meaningful contributions may qualify for free or heavily subsidized hosting on Karmantika for your own project or portfolio.
+Meaningful contributions may qualify for free or heavily subsidized hosting on  [Karmantika](https://karmantika.com) for your own project or portfolio.
 
 
 ## Tech Stack
@@ -33,3 +33,4 @@ Meaningful contributions may qualify for free or heavily subsidized hosting on K
 
  Open an issue, submit a PR, or just say hi!
 Let’s build the future of business websites — together.
+
