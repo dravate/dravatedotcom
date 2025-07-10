@@ -1,17 +1,23 @@
 
 <template>
   
-<div class="antialiased bg-white dark:bg-[#020420] text-[#020420] dark:text-white min-h-screen flex flex-col">
+  <div class="antialiased transition-colors duration-300 bg-white dark:bg-[#020420] text-[#020420] dark:text-white min-h-screen flex flex-col">
+
     <!-- Header -->
+
      <header class="w-full border-b border-gray-200 dark:border-white/10 px-4 py-4">
+
  <div class="max-w-[980px] w-full mx-auto flex items-center gap-4">
   <NuxtLink to="/" class="flex items-center gap-4">
     <img :src="webSiteStore.logo" class="w-24 rounded-xl h-auto" />
     <div>
-      <h1 class="text-3xl font-bold">{{ webSiteStore.title }}</h1>
-      <span class="text-xs block">{{ webSiteStore.tagline }}</span>
+      <h1 class="text-xs sm:text-3xl font-bold border-b border-gray-200">{{ webSiteStore.title }}</h1>
+      <span class="font-semibold text-[10px] sm:text-xs block">{{ webSiteStore.tagline }}</span>
     </div>
   </NuxtLink>
+
+    <DarkModeToggle />
+
 </div>
 </header>
 
@@ -71,6 +77,8 @@
   </div>
 </footer>
 
+<karmantika />
+
       </div>
   
        
@@ -87,6 +95,7 @@ import { onMounted, computed } from 'vue'
 import { useWebSiteStore } from '../stores/useWebsite'
 import BreadCrumb from '../components/BreadCrumb.vue';
 import ChatService from '../components/chat/ChatService.vue';
+import karmantika from '../components/karmantika.vue';
 
 const webSiteStore = useWebSiteStore(); 
 

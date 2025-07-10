@@ -12,7 +12,7 @@
     <SwiperSlide
       v-for="(item, index) in items"
       :key="index"
-      class="px-24 dark:bg-black p-4 rounded"
+      class="px-24 dark:bg-gray-800  p-4 rounded"
     >
 
     

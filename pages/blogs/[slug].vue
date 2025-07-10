@@ -13,7 +13,7 @@
     <h1 class="text-3xl font-bold mb-4">{{ blog?.title }}</h1>
 
     <!-- Excerpt -->
-    <div v-html="blog?.excerpt" class="text-gray-500 mb-4" />
+    <div v-html="blog?.excerpt" class="quill-excerpt text-gray-500 mb-4 dark:text-gray-200"  />
 
   
 
@@ -70,3 +70,32 @@ onMounted(async () => {
 })
 </script>
 
+
+<style lang="postcss">
+/* You can place this in a global CSS or scoped style block */
+
+.quill-excerpt {
+  color: #6b7280; /* Tailwind gray-500 */
+}
+
+.dark .quill-excerpt,
+.dark .quill-excerpt p,
+.dark .quill-excerpt span,
+.dark .quill-excerpt div {
+  color: #e5e7eb !important; /* Tailwind gray-200 */
+}
+
+/* Optional: darker link styling */
+.dark .quill-excerpt a {
+  color: #38bdf8; /* Tailwind sky-400 */
+}
+
+/* Optional: headings */
+.dark .quill-excerpt h1,
+.dark .quill-excerpt h2,
+.dark .quill-excerpt h3 {
+  color: #f3f4f6 !important; /* Tailwind gray-100 */
+}
+
+
+</style>

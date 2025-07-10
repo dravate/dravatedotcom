@@ -1,6 +1,6 @@
 <!-- components/cards/TestimonialCard.vue -->
 <template>
-  <div class="p-6 border rounded-lg shadow-sm bg-white dark:bg-white/5 border-gray-200 dark:border-white/10 flex flex-col items-center gap-4">
+  <div class="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800 border-gray-200 dark:border-white/10 flex flex-col items-center gap-4">
     <!-- Picture -->
     <img
       :src="testimonial.pic"

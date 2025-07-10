@@ -9,7 +9,8 @@
 
   <div class="max-w-[980px] w-full grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-4 sm:mt-6 px-4">
     <NuxtLink to="/about"
-      class="relative flex flex-col gap-1 border p-6 rounded-lg border-gray-200 dark:border-white/10 dark:bg-white/5 bg-gray-50/10 group hover:dark:border-[#00DC82] hover:border-[#00DC82] transition-all">
+      class="relative flex flex-col gap-1 border p-6 rounded-lg border-gray-200 dark:border-white/10 dark:bg-gray-800
+ bg-gray-50/10 group hover:dark:border-[#00DC82] hover:border-[#00DC82] transition-all">
       <div
         class="w-[32px] h-[32px] bg-[#00DC82]/5 flex items-center justify-center border rounded border-[#00DC82] transition-all dark:border-[#00DC82]/50 group-hover:dark:border-[#00DC82]/80 dark:bg-[#020420] text-[#00DC82] dark:text-[#00DC82]">
         <svg class="size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
@@ -32,7 +33,8 @@
     </NuxtLink>
 
     <NuxtLink to="/contact"
-      class="relative flex flex-col gap-1 border p-6 rounded-lg border-gray-200 dark:border-white/10 dark:bg-white/5 bg-gray-50/10 group hover:dark:border-[#00DC82] hover:border-[#00DC82] transition-all">
+      class="relative flex flex-col gap-1 border p-6 rounded-lg border-gray-200 dark:border-white/10 dark:bg-gray-800
+ bg-gray-50/10 group hover:dark:border-[#00DC82] hover:border-[#00DC82] transition-all">
       <div
         class="w-[32px] h-[32px] bg-[#00DC82]/5 flex items-center justify-center border rounded border-[#00DC82] transition-all dark:border-[#00DC82]/50 group-hover:dark:border-[#00DC82]/80 dark:bg-[#020420] text-[#00DC82] dark:text-[#00DC82]">
         <svg class="size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
@@ -72,7 +74,8 @@
 
 
     <NuxtLink to="/blogs"
-      class="relative flex flex-col gap-1 border p-6 rounded-lg border-gray-200 dark:border-white/10 dark:bg-white/5 bg-gray-50/10 group hover:dark:border-[#00DC82] hover:border-[#00DC82] transition-all">
+      class="relative flex flex-col gap-1 border p-6 rounded-lg border-gray-200 dark:border-white/10 dark:bg-gray-800
+ bg-gray-50/10 group hover:dark:border-[#00DC82] hover:border-[#00DC82] transition-all">
       <div
         class="w-[32px] h-[32px] bg-[#00DC82]/5 flex items-center justify-center border rounded border-[#00DC82] transition-all dark:border-[#00DC82]/50 group-hover:dark:border-[#00DC82]/80 dark:bg-[#020420] text-[#00DC82] dark:text-[#00DC82]">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256">
@@ -98,7 +101,7 @@
 
 
     <NuxtLink to="/courses"
-      class="relative flex flex-col gap-1 border p-6 rounded-lg border-gray-200 dark:border-white/10 dark:bg-white/5 bg-gray-50/10 group hover:dark:border-[#00DC82] hover:border-[#00DC82] transition-all">
+      class="relative flex flex-col gap-1 border p-6 rounded-lg border-gray-200 dark:border-white/10 dark:bg-gray-800 bg-gray-50/10 group hover:dark:border-[#00DC82] hover:border-[#00DC82] transition-all">
       <div
         class="w-[32px] h-[32px] bg-[#00DC82]/5 flex items-center justify-center border rounded border-[#00DC82] transition-all dark:border-[#00DC82]/50 group-hover:dark:border-[#00DC82]/80 dark:bg-[#020420] text-[#00DC82] dark:text-[#00DC82]">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256">

@@ -2,23 +2,32 @@
   <nav
     v-if="breadcrumb.length"
     aria-label="breadcrumb"
-    class="text-sm py-4 px-6 text-gray-600"
+    class="text-sm py-4 px-6 text-gray-600 dark:text-gray-300"
   >
-    <ol class="flex space-x-2">
-      <li>
-        <NuxtLink to="/" class="hover:underline text-blue-600">Home</NuxtLink>
-        <span v-if="breadcrumb.length"> / </span>
+    <ol class="flex flex-wrap space-x-2">
+      <li class="flex items-center">
+        <NuxtLink to="/" class="hover:underline text-blue-600 dark:text-blue-400">Home</NuxtLink>
+        <span v-if="breadcrumb.length" class="mx-1 text-gray-500 dark:text-gray-400">/</span>
       </li>
-      <li v-for="(crumb, index) in breadcrumb" :key="index" class="flex items-center space-x-1">
-        <span v-if="index !== 0">/</span>
+      <li
+        v-for="(crumb, index) in breadcrumb"
+        :key="index"
+        class="flex items-center space-x-1"
+      >
+        <span v-if="index !== 0" class="text-gray-500 dark:text-gray-400">/</span>
         <NuxtLink
           v-if="index !== breadcrumb.length - 1"
           :to="crumb.path"
-          class="hover:underline text-blue-600"
+          class="hover:underline text-blue-600 dark:text-blue-400"
         >
           {{ crumb.label }}
         </NuxtLink>
-        <span v-else class="font-semibold">{{ crumb.label }}</span>
+        <span
+          v-else
+          class="font-semibold text-gray-800 dark:text-white"
+        >
+          {{ crumb.label }}
+        </span>
       </li>
     </ol>
   </nav>
