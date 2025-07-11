@@ -125,16 +125,15 @@
         project on different providers.</p>
     </NuxtLink>
 
-
     <InfoCard to="/testimonials" :items="testimonials">
       <template #icon>
-        <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">T</div>
+        <div class="px-2 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">T</div>
       </template>
       <template #title>
-        <h2 class="font-semibold text-xl mt-1">Testimonials</h2>
+        <h2 class="px-2 font-semibold text-xl mt-1">Testimonials</h2>
       </template>
       <template #description>
-        <p class="text-sm text-gray-700 dark:text-gray-300">Read what people are saying.</p>
+        <p class="px-2 text-sm text-gray-700 dark:text-gray-300">Read what people are saying.</p>
       </template>
     </InfoCard>
 

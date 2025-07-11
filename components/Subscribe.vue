@@ -27,23 +27,31 @@
          Provide your email address below, and you'll be the first to know about our newest products, special promotions, vlogs and more!.</p>
     
     
-           <form @submit.prevent="subscribe" class="flex items-center mt-4">
-        <input
-          v-model="email"
-          type="email"
-          placeholder="Enter your email"
-          class="flex-grow px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          required
-        />
-        <button
-          type="submit"
-          class="px-6 py-3 bg-green-600 text-white font-semibold rounded-r-lg hover:bg-indigo-700 transition-colors duration-300"
-        >
-          Subscribe
-        </button>
+
+            <form @submit.prevent="subscribe" class="flex flex-col sm:flex-row sm:items-center mt-4 w-full gap-2 sm:gap-0">
+
+       <input
+  v-model="email"
+  type="email"
+  placeholder="Enter your email"
+  class="w-full sm:flex-grow px-4 py-3 border border-gray-300 rounded-lg sm:rounded-l-lg sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-indigo-500"
+  required
+/>
+
+<button
+  type="submit"
+  class="w-full sm:w-auto px-6 py-3 bg-green-600 text-white font-semibold rounded-lg sm:rounded-l-none sm:rounded-r-lg hover:bg-green-700 transition-colors duration-300"
+>
+  Subscribe
+</button>
+
+
       </form>
 
     
+      <p v-if="success" class="text-green-600 mt-2 text-sm">Thanks for subscribing!</p>
+
+      
     
     </div>
 
@@ -54,13 +62,16 @@
   import { ref } from 'vue';
   
   const email = ref('');
+  const success = ref(false);
+const subscribe = () => {
+  console.log('Subscribed with email:', email.value);
+  success.value = true;
+  setTimeout(() => (success.value = false), 3000);
+  email.value = '';
+};
+
+
   
-  const subscribe = () => {
-    // Replace with your actual subscription logic/API call
-    console.log('Subscribed with email:', email.value);
-    // Optionally reset the input after submission
-    email.value = '';
-  };
   </script>
   
   <style scoped>

@@ -2,7 +2,7 @@
 <template>
   
   
-  <NuxtLink :to="to" class="group relative flex flex-col gap-1 border p-6 rounded-lg transition-all hover:border-[#00DC82] dark:border-white/10 dark:bg-gray-800 bg-gray-50/10">
+  <NuxtLink :to="to" class="group relative flex flex-col gap-1 border  rounded-lg transition-all hover:border-[#00DC82] dark:border-white/10 dark:bg-gray-800 bg-gray-50/10">
     <slot name="icon" />
     <slot name="title" />
     <slot name="description" />
